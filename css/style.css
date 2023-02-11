@@ -5,11 +5,15 @@
 body{
     background-color: #131720;
     font-family: sans-serif;
-}
-
-h3{
     color: white;
 }
+h4{
+    text-align: center;
+}
+.addReviewBtn {
+    text-align: center;
+}
+
 
 .topnav {
     overflow: hidden;
@@ -42,9 +46,9 @@ form {
 }
 
 input {
-    all: unset;
+
     font: 15px system-ui;
-    color: #fff;
+    color: black;
     height: 100%;
     width: 100%;
     padding: 6px 9px;

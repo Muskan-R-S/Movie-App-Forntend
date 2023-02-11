@@ -1,6 +1,8 @@
 const APILINK = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=41ee980e4b5f05f6693fda00eb7c4fd4&page=1';
+//API to get movies list 
 const IMG_PATH = "https://image.tmdb.org/t/p/w1280";
-  const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?&api_key=41ee980e4b5f05f6693fda00eb7c4fd4&query=";
+//
+const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?&api_key=41ee980e4b5f05f6693fda00eb7c4fd4&query=";
 
 
   const main = document.getElementById("section");
@@ -31,7 +33,7 @@ returnMovies(APILINK)
         
         const center = document.createElement('center');
   
-        title.innerHTML = `${element.title}`;
+        title.innerHTML = `${element.title} <br> <a href= "movie.html?id=${element.id}&title=${element.title}">reviews</a>`;
         image.src = IMG_PATH + element.poster_path;
   
         center.appendChild(image);
